@@ -1,0 +1,13 @@
+body {
+  background-color: lavenderblush;
+}
+h1 {
+  color: RebeccaPurple;
+  font-family:  Noto Sans, sans-serif;
+  font-variant: small-caps;
+  font-weight:  600;
+}
+p {
+  color: darkslateblue;
+  font-family:  Arial;
+}
