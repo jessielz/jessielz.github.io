@@ -11,15 +11,37 @@
 <p>hello my first assignment is on modelling and laser cutting.</p>
 <h2>research + background</h2>
 <p>
-  this was honestly pretty difficult since i didn't feel like i knew what i was doing with digital fabrication, so i started googling some previous assignments to see what others had done before and started brainstorming some potential patterns and designs that i could incorporate. something simple, nothing complex. i decided to start with basic shapes so i could understand the laser cutting process: circle, square, and triangle. sounds easy, right?
+  this was honestly pretty difficult since i didn't feel like i knew what i was doing with digital fabrication, so i started googling some previous assignments to see what others had done before and started brainstorming some potential patterns and designs that i could incorporate. something simple, nothing complex. i decided to start with basic shapes so i could understand the laser cutting process: circle, square, and triangle. sounds easy, right? i decided to start with a square to at least get my feet wet.
 </p>
 <h2>getting to work</h2>
 <p>
-  i started creating three different shapes with slots in adobe illustrator at odegaard library since it has a free version of illustrator (thank you so much, student technology fee!!) and made my way over to the MILL / the 8 to try to transfer that file. from reading previous students' work, i knew that i had to get stroke just right; it had to be centered instead of in-line. additionally, the calipher is critical to measuring the cardboard so i took advantage of the MILL / the 8's calipher to measure the cardboard that my friend graciously gifted me.
+  i started creating a square in rhino 7 with the help of TA junchao, and added some slots using polar array. here are the following steps i took to create this basic shape:</p>
+  <ol>
+    <li>command "Rectangle" to create a square</li>
+    <li>command "Line" to create a line</li>
+    <li>snap object, check "End" and "Midpoint" and draw the line</li>
+    <li>command "Rectangle" to create a rectangle</li>
+    <li>command "ArrayPolar" and select the most recently created rectangle, input 4 for the number of rectangles, "360" for angle, and enter</li>
+    <li>select all objects and command "Trim", select the lines that need to be removed, namely the extruding lines and extra lines</li>
+    <li>select all objects and command "Join" to ensure that it is all a single curve to make it easier for the laser cutter to cut the shape</li>
+    <li>voila! we have a square with four slots</li>
 </p>
-<h2>acknowledgements & gratitude</h2>
+  <p>the calipher is critical to measuring the cardboard so i took advantage of the MILL / the 8's calipher to measure the cardboard that my friend graciously gifted me. i cut out a small cardboard to test, measured the dimensions (180mm x 200mm approximately) and used the calipher to find the thickness of the cardboard. i estimated it to be <b>2.65mm</b>. i used that thickness to determine the width of the slot in rhino; however, i ran into the difficulty of making sure that it was actually the correct width when laser cut.</p>
+  <p>i then exported the rhino file as an adobe illustrator file, making sure to convert the millimeters to inches (1 mm = 0.03937 in). i measured the cardboard that i was using and adjusted the artboard to fit the cardboard width. i cut/pasted the same shape multiple times for the total of 30 shapes.
+</p>
+<p>for laser cutting according to the MILL, my settings were:
+<ol>
+  <li>speed: 30</li>
+  <li>power: 100</li>
+  <li>frequency: 10</li>
+</ol>
+</p>
+<h2>finished creation</h2>
+<p>i will post images of my final creation here.
+</p>
+<h2>acknowledgments & gratitude</h2>
 <p>
-  thank you very much to <b>mabel ho</b>, my friend & neighbor, for gifting me extra cardboard so i could work on this project. thank you also to <b>andy moon</b> for the moral support. finally, shout out to the previous students and wonderful staff at the MILL / the 8 for teaching me how to use illustrator and laser cutting.
+  thank you very much to <b>mabel ho</b>, my friend & neighbor, for gifting me extra cardboard so i could work on this project. thank you also to <b>andy moon</b> for the moral + academic support and the TA <b>junchao</b> for thoughtfully explaining how to use rhino. finally, shout out to the previous students and wonderful staff <b>(bella!!!)</b> at the MILL / the 8 for teaching me how to use illustrator and laser cutting.
 </p>
 </div>
 </body>

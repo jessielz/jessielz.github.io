@@ -10,5 +10,9 @@ h1 {
 body {
   color: darkslateblue;
   font-family:  Arial;
+  font-size:  16px;
   line-height:  1;
+}
+b {
+  font-family:  Noto Sans, sans-serif;
 }
