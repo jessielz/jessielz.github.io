@@ -16,3 +16,8 @@ body {
 b {
   font-family:  Noto Sans, sans-serif;
 }
+img {
+  width:  400px;
+  height:  auto;
+  border: solid 2px black;
+}
