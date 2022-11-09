@@ -24,6 +24,10 @@
 <p>
 	after reducing the meshes and using the MeshRepair to repair the meshes automatically, i found out that this combined mesh had some naked edges (which were unproblematic, it seemed?) and 4 non-manifold edges. after much googling, i learned more about non-manifold edges than i wanted to. a solution was to (1) add a new face to connect the vertices so that the non-manifold edge would disappear or (2) delete the edge so that it doesn't exist anymore... but then it would present a new problem, creating an <b>open surface mesh</b>, which i didn't want! i wanted a closed surface mesh to make it easier for the STL to legitimately be prototype-able. alas, i am still trying to figure out how to get rid of the non-manifold edges, but i am content to have figured out how to use MeshRepair, ReduceMesh, and BooleanUnion. i could also have used BooleanDifference if i wanted to create a hollow space, but i didn't feel like doing that.
 </p>
+<center>
+	<p><img src="a5-mesh.png"></img></p>
+	<p><i>my mesh edit for now... i could probably start over...</i></p>
+</center>
 <p>
 	one thing i would have liked to learn more about is <b>loft</b> command in rhino. i still feel confused about what <b>loft</b> does, so hopefully i'll figure that out one day.
 </p>
