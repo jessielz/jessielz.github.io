@@ -59,10 +59,44 @@
 	i was supposed to make the "positive" versions of the molds that would be 3d printed!
 </p>
 <p>
-	currently, i am in the process of constructing the molds in rhino 7. i've built in the sprue and keys into the mold, and i've learned how to use MeshBooleanSplit. at one point, i ran into the problem of splitting the cylinders or tubes — when i tried to split these, they became rectangles! it wasn't until <b>sara cagle</b> helped me that i realized that it was because the plane did not cover all of the cylinders or tubes. once i made sure that these tubes (i realized i used cylinders instead of tubes so i made a new design of mold with the tubes) were inside the plane, they were split. to aid with constructing the mold, i reduced the number of polygons for the pumpkin to around 5k polygons. i used MeshBooleanUnion for tubes and pumpkin halves to aid in moving these around and making sure that they were fused. 
-	</p>
-	<p>interestingly, i ran into several issues such as a glitchy display error that consumed my time... which was resolved by restarting rhino... and not fully understanding how to build the "walls". i had seen bounding box, ribbon offset, offset, draft angle analysis, and other commands used in the class demo but i didn't fully understand what they meant. i asked <b>nichelle</b>, <b>vanessa</b>, and <b>sara</b> for help. 
-	</p>
+	currently, i am in the process of constructing the molds in rhino 7. i've built in the sprue and keys into the mold, and i've learned how to use MeshBooleanSplit, MeshBooleanUnion, OffsetCrv / OffsetSrf, etc.
+</p>
+<p>
+	at one point, i ran into the problem of splitting the cylinders or tubes — when i tried to split these, they became rectangles! it wasn't until <b>sara cagle</b> helped me that i realized that it was because the plane did not cover all of the cylinders or tubes. once i made sure that these tubes (i realized i used cylinders instead of tubes so i made a new design of mold with the tubes) were inside the plane, they were split.</p>
+<p>
+	<center><img src="a6-broken-cylinders.png"></img></center>
+</p>
+<p>
+	to aid with constructing the mold, i reduced the number of polygons for the pumpkin to around 5k polygons. i used MeshBooleanUnion for tubes and pumpkin halves to aid in moving these around and making sure that they were fused.
+</p>
+<p>
+	interestingly, i ran into several issues such as a glitchy display error that consumed my time...
+</p>
+<p>
+	<center>
+		<img src="a6-triangles.png"></img> 
+		<img src="a6-error.png"></img> 
+		<img src="a6-display.png"></img> 
+	</center>
+</p>
+<p>
+	which was resolved by restarting rhino!
+</p>
+<p>
+	i didn't really quite understand how to build the walls of the box. i decided to test my knowlege of building the walls by testing on simpler shapes like rectangles and boxes. 
+</p>
+<p>
+	<center>
+		<img src="a6-box.png"></img> <img src="a6-rendered-box.png"></img> 
+	</center>
+</p>
+<p>
+	i had seen bounding box, ribbon offset, offset, draft angle analysis, and other commands used in the class demo but i didn't fully understand what they meant. i asked <b>nichelle</b>, <b>vanessa</b>, and <b>sara</b> for help. 
+</p>
+<h2>documentation</h2>
+<p>
+	<a href="a6-pumpkin.3dm">[ rhino file for pumpkin mold ]</a>
+</p>
 <h2>acknowledgments & gratitude</h2>
 <p>
   props to all of my classmates mentioned in this write-up and <b>junchao</b>for their support and help with the intricacies of this assignment!
