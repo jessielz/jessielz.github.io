@@ -4,24 +4,68 @@
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
   <link rel="stylesheet" href="styles.css">
-	<title>Assignment 6: </title> 
+	<title>Assignment 6: Lamps part 2! And molding and casting part 1!</title> 
 	</head>
 <body>
-<h1>assignment 6: getting meshy! and lamps!</h1>
+<h1>assignment 6: lamps & molding/casting</h1>
 <p>
 	in this assignment, i'll be finishing my lamp design and getting started on molding and casting something!
 </p>
 <h2>lamp!</h2>
 <p>
-	i will be continuing my lamp design.
+	since i didn't have the calipers with me yet, i decided to try to create a small mock-up of the design (see <a href="assignment5.html">part 1</a>) just to make sure that the pieces fit well together. one potential approach i took was: 
+	<ol>
+		<li>create a hexagon</li>
+		<li>split it in half</li>
+		<li>extrude it so that it can be a 3d object</li>
+		<li>add dogbones so that the halves can snap into place</li>
+	</ol>
+</p>
+<p>
+	after looking around on the internet, i found out that some people created hexagons by constructing 6 "walls" or rectangles and joining them together physically. so i took a different approach:
+	<ol>
+		<li>create a rectangle</li>
+		<li>create dogbones around the sides of the rectangle</li>
+		<li>join everything and then copy + paste 5x more</li>
+		<li>extrude all</li>
+		<li>in perspective view, join these together</li>
+	</ol>
+	with this design, i laser-cut six walls of the hexagon but then quickly realized that the laser printed cardboard versions of the hexagon were too big. i spent a lot of time trying to figure out how hexagons worked together, too.
+</p>
+<p>
+	i decided to pivot to 3d printing!
+</p>
+<p>
+	i thought it would be smart to try to level the bed but then i ended up ruining the z-axis which was frustrating to fix! i asked <b>jess</b> for help since jess has a lot of experience with troubleshooting creality ender pro 3, and she gave me some recommendations. i was a bit frustrated with the 3d printer that i decided to use the MILL's dremel printer instead.
+</p>
+<p>
+	when i 3d printed the STLs, i realized that my walls were too small to create hexagons and the dogbones had become too thick, which made it difficult to fit the pieces together. i decided to look for a similar hexagon on thingiverse and found this <a href="https://www.thingiverse.com/thing:1159321">cute hexagonal plant pot</a> that i could borrow. i scaled it down by .75 so that the hole could fit onto the lamp. i split this in half by creating a Plane and running it halfway through the hexagon and command MeshBooleanSplit. i modified the 3d printing settings to support a faster print based on noelle's comments in discord. 
+</p>
+<p>
+	for each half of the hexagon, the printing time was 13 minutes. initially i had moved the hexagon on its side with some support, but i quickly realized after it printed in 17 minutes that this meant more time printing and more energy getting rid of the support. the hexagon halves seemed to work well together, but then i ran into the problem of affixing these halves to the lamp. i realized that my original sketch was a bit ambitious. i didn't have enough time or motivation to finish the lamp so i decided to move onto the next part of this assignment, which is molding and casting!
 </p>
 <h2>molding & casting!</h2>
 <p>
-	i will be getting started on molding & casting.
+	during prof. nadya's lecture, i thought that it would be simplest to create a sphere mold that had keys and sprues. prof. nadya's re-explanations of these components of the mold really helped me visualize the potential design of the mold. keys help hold the mold together and the sprues help push the air outward so that the mold can be filled when casted! prof. nadya helpfully explained that it takes up to 1 hour to cast a mold (so i have to work on that quickly) and it could take up to 6 hours for this to cure. i wanted to do something simple.
 </p>
+<p>
+	first i have to make a master. thankfully, the assignment permitted me to use a thing from thingiverse as long as i gave credit. since it's still autumn, i decided to use the pumpkin as my master. i found the <a href="https://www.thingiverse.com/thing:1836056">pumpkin from this pumpkin patch on thingiverse</a>.
+</p>
+<p>
+	i was a bit confused by the assignment description. thankfully, danli posted a graphic in discord that helped me understand what i was supposed to do.
+</p>
+<p>
+	<center><img src="https://media.discordapp.net/attachments/1024987240155332669/1041812840853557390/image.png"></img></center>
+	i was supposed to make the "positive" versions of the molds that would be 3d printed!
+</p>
+<p>
+	currently, i am in the process of constructing the molds in rhino 7. i've built in the sprue and keys into the mold, and i've learned how to use MeshBooleanSplit. at one point, i ran into the problem of splitting the cylinders or tubes — when i tried to split these, they became rectangles! it wasn't until <b>sara cagle</b> helped me that i realized that it was because the plane did not cover all of the cylinders or tubes. once i made sure that these tubes (i realized i used cylinders instead of tubes so i made a new design of mold with the tubes) were inside the plane, they were split. to aid with constructing the mold, i reduced the number of polygons for the pumpkin to around 5k polygons. i used MeshBooleanUnion for tubes and pumpkin halves to aid in moving these around and making sure that they were fused. 
+	</p>
+	<p>interestingly, i ran into several issues such as a glitchy display error that consumed my time... which was resolved by restarting rhino... and not fully understanding how to build the "walls". i had seen bounding box, ribbon offset, offset, draft angle analysis, and other commands used in the class demo but i didn't fully understand what they meant. i asked <b>nichelle</b>, <b>vanessa</b>, and <b>sara</b> for help. 
+	</p>
 <h2>acknowledgments & gratitude</h2>
 <p>
-  props to <b>junchao</b> always.
+  props to all of my classmates mentioned in this write-up and <b>junchao</b>for their support and help with the intricacies of this assignment!
 </p>
 </div>
 </body>
